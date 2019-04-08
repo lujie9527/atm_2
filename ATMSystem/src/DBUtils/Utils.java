@@ -10,17 +10,19 @@ public class Utils {
     static String username = "root";
     static String password = "123456";
 
-    static{
-        try{
+    static {
+        try {
             Class.forName(driver);//加载驱动程序
-        }catch (ClassNotFoundException e){
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
+
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url,username,password);//连接数据库
+        return DriverManager.getConnection(url, username, password);//连接数据库
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         try {
             System.out.println(Utils.getConnection());
         } catch (SQLException e) {

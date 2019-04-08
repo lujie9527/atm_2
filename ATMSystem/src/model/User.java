@@ -1,40 +1,42 @@
 package model;
 
+import java.math.BigDecimal;
+
 public class User {
     private String number;
     private String name;
     private String password;
-    private String money;
+    private BigDecimal money;
 
-    public String getNumber(){
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(String number){
+    public void setNumber(String number) {
         this.number = number;
     }
 
-    public String  getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getPassword(){
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password){
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public String getMoney(){
+    public BigDecimal getMoney() {
         return money;
     }
 
-    public void setMoney(String money){
+    public void setMoney(BigDecimal money) {
         this.money = money;
     }
 
